@@ -26,7 +26,7 @@ export class Todo {
     
     get dash() {
         if(this.completed == true) {
-            return 'text-decoration-line-through'
+            return 'text-decoration-line-through text-white-50'
         }
         
         return ''
