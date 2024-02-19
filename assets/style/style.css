@@ -1,1 +1,74 @@
 /* BASIC STYLES HERE */
+
+body {
+    background-size: cover;
+    background-position: center;
+}
+
+.authorImgCard {
+    text-shadow: 1px 1px 3px black;
+    padding: .2em 1em;
+    background-color: rgba(25, 25, 25, 0.386);
+    border-radius: 16px;
+    width: fit-content;
+}
+
+.creator-pfp {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.quote {
+    text-shadow: 1px 1px 3px black;
+}
+
+.quote-card {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+.touch {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.quote-card:hover .touch {
+    opacity: 1;
+}
+
+footer {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: rgba(25, 25, 25, 0.672);
+}
+
+.weather {
+    border: 2px solid white;
+    margin: 2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.todo-button {
+    background-color: rgba(25, 25, 25, 0.672);
+    border: none;
+    width: 350px;
+    color: white;
+    padding: 10px;
+}
+
+.todoCard {
+    background-color: rgba(25, 25, 25, 0.672);
+    min-height: 300px;
+    width: 350px;
+    padding: 20px;
+    color: white;
+    overflow-y: auto;
+}
