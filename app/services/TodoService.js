@@ -21,7 +21,7 @@ class TodoService {
     async removeTodo(id) {
         console.log(id)
         const response = await api.delete(`api/todos/${id}`)
-        const findIndex = AppState.todos.findIndex(todo => todo.id = id)
+        const findIndex = AppState.todos.findIndex(todo => todo.id == id)
         console.log('Deleting..', response.data);
         if(findIndex == -1) {
             throw new error('Returned -1. ERROR!')

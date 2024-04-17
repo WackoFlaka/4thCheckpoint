@@ -23,8 +23,8 @@ function _drawTODOs() {
 }
 
 function _drawTotalTODOs() {
-    const length = AppState.todos.length
-    setHTML('total', length)
+    const length = AppState.todos.filter(todo => todo.completed == false)
+    setHTML('total', length.length)
 }
 
 export class TodoController {
